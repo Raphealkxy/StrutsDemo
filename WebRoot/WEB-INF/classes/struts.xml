@@ -4,8 +4,43 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 <package name="mypackage" extends="struts-default" namespace="/">
-<action name="demo*" class="com.timmy.structs.Action" method="{1}">
+<action name="hello" class="com.timmy.structs.Action" >
 <result name="ok">/index.jsp</result>
+
+</action>
+
+<action name="actioncontent" class="com.timmy.structs.Action" method="getContentByActionContext" >
+<result name="actioncontent">/index.jsp</result>
+
+</action>
+
+<action name="ModelDriven" class="com.timmy.structs.UserAction"  >
+<result name="success">/index.jsp</result>
+
+</action>
+
+<action name="register" class="com.timmy.structs.fieldModel"  >
+<result name="ok">/index.jsp</result>
+
+</action>
+<action name="InterfaceInput" class="com.timmy.structs.Form3DemoAction"  >
+<result name="success">/index.jsp</result>
+
+</action>
+
+
+<action name="AttributeEnclosure" class="com.timmy.structs.AttributeEnclosure"  >
+<result name="success">/index.jsp</result>
+
+</action>
+
+<action name="EnclosureToList" class="com.timmy.structs.EnclosureToLiat"  >
+<result name="success">/index.jsp</result>
+
+</action>
+
+<action name="EnclosureToMap" class="com.timmy.structs.EnclosureToMap"  >
+<result name="success">/index.jsp</result>
 
 </action>
 </package>
