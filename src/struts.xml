@@ -43,5 +43,20 @@
 <result name="success">/index.jsp</result>
 
 </action>
+
+<action name="valueStack" class="com.timmy.structs.valueStack"  >
+<result name="success">/valueStack.jsp</result>
+
+</action>
+
+<action name="valueStackObject" class="com.timmy.structs.valueStack" method="addObject" >
+<result name="success">/valueStack.jsp</result>
+
+</action>
+
+<action name="valueStackContent" class="com.timmy.structs.Content"  >
+<result name="success">/content.jsp</result>
+
+</action>
 </package>
 </struts>
